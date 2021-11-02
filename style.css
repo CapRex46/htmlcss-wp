@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -20,6 +21,7 @@ header{
 .logo{
     width: 250px;
     padding-right: 20px;
+    padding-bottom: 20px;
 }
 
 nav{
@@ -45,11 +47,11 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-main{
+.banner1{
     width: auto;
     height: 500px;
     background-image: url(img/banner.jpg);
-    filter: brightness(80%);
+    filter: brightness(50%);
     padding: 50px;
     margin: 50px;
     position: relative;
@@ -57,8 +59,7 @@ main{
 }
 
 .text{
-    color: black;
-    filter: brightness(0%);
+    color: white;
     width: 800px;
     height: 100px;
     position: absolute;
@@ -67,11 +68,16 @@ main{
     display: inline;
 }
 
+main{
+    width: 1200px;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    margin-top: 15px;
+}
 
 
-.col-top{
-    width: 100%;
-    padding-bottom: 20px;
+.fl{
+    float: left;
 }
 
 .col-left{
@@ -88,6 +94,43 @@ main{
 }
 
 .col-content {
-    height: 500px;
-    background: #abcce4
+    height: 100px;
+}
+
+
+.row{
+    padding-top: 40px;
+}
+
+
+.infoim{
+    filter: brightness(50%);
+    border-radius: 15px;
+}
+
+
+.lxtext, .centertext, .dxtext {
+    padding-top: 20px;
+}
+
+
+.banner2{
+    display: block;
+    margin-left: auto;
+    margin-right: 60px;
+    width: 50%;
+    height: 300px;
+    width: 500px;
+}
+
+.centertext{
+    text-align: left;
+    padding-left: 120px;
+    padding-right: 80px;
+}
+
+.im3{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
 }
