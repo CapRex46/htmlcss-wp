@@ -171,3 +171,14 @@ main{
 .col-content h3{
     font-size: 16px;
 }
+
+footer {
+    text-align: center;
+    margin-top:  20px;
+    margin-bottom: 20px;
+}
+
+footer span {
+    color: red;
+    font-size: 20px;
+}
