@@ -14,15 +14,21 @@
 }
 
 header{
-    border-right: 1px solid;
-    display: inline-block;
+    height: 100px;
+    padding: 15px 0;
 }
 
-.logo{
-    width: 250px;
+.logo-container{
+    display: inline-block;
     padding-right: 20px;
-    padding-bottom: 20px;
+    border-right: 1px #ccc solid;
+    height: 100%;
 }
+
+.logo-container img{
+    height: 100%;
+}
+
 
 nav{
     padding: 20px;
@@ -34,29 +40,63 @@ nav ul {
 }
 
 nav ul li {
-    display: inline-block;
-    /* margin-right: 8px; */
+    float: left;
+    margin-right: 20px;
+    text-transform: uppercase;
 }
+
 
 nav ul li a {
     text-decoration: none;
-    padding: 0 20px;
+    color: rgb(169, 169, 169);
 }
 
 nav ul li a:hover {
     text-decoration: underline;
 }
 
-.banner1{
-    width: auto;
+.jumbotron{
+    margin-top: 40px;
     height: 500px;
-    background-image: url(img/banner.jpg);
-    filter: brightness(50%);
-    padding: 50px;
-    margin: 50px;
+    background: url(img/banner.jpg) 50% 50%;
+    background-size: cover;
     position: relative;
+}
+
+.textgray{
+    color: rgb(169, 169, 169);
+}
+
+
+.br{
     border-radius: 15px;
-    object-fit: cover;
+    overflow: hidden;
+}
+
+.leadertitle{
+    margin-top: 40px;
+    font-size: 36px;
+}
+
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.2;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+
+.jumbotron-content{
+    color: white;
+    position: absolute;
+    bottom: 60px;
+    left: 50px;
+    width: 50%;
+    z-index: 2;
 }
 
 .text{
@@ -76,62 +116,58 @@ main{
     margin-top: 15px;
 }
 
+.row{
+    padding-top: 40px;
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
 
 .fl{
     float: left;
 }
 
-.col-left{
-    width: 20%;
-}
-
 .col-center{
     width: 60%;
-    padding: 0 20px;
+    padding: 0 15px;
 }
 
-.col-right{
+.col-right, .col-left{
     width: 20%;
 }
 
-.col-content {
-    height: 100px;
+/* .col-content{
+    height: 200px;
+    background-color: purple;
+}  */
+
+.col-img{
+    height: 200px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.col-img-1{
+    background: url(img/img-1.jpg);
+    background-size: cover;
+}
+
+.col-img-2{
+    background: url(img/banner-2.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
 }
 
 
-.row{
-    padding-top: 40px;
+.col-img-3{
+    background: url(img/img-3.jpg) 50% 50%;
+    background-size: cover;
 }
 
 
-.infoim{
-    filter: brightness(50%);
-    border-radius: 15px;
-}
-
-
-.lxtext, .centertext, .dxtext {
-    padding-top: 20px;
-}
-
-
-.banner2{
-    display: block;
-    margin-left: auto;
-    margin-right: 60px;
-    width: 50%;
-    height: 300px;
-    width: 500px;
-}
-
-.centertext{
-    text-align: left;
-    padding-left: 120px;
-    padding-right: 80px;
-}
-
-.im3{
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
+.col-content h3{
+    font-size: 16px;
 }
